@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #eee;
+      }
+      .gradient-brand-color {
+        background-image: -webkit-linear-gradient(
+          0deg,
+          #376be6 0%,
+          #6470ef 100%
+        );
+        background-image: -ms-linear-gradient(0deg, #376be6 0%, #6470ef 100%);
+        color: #fff;
+      }
+      .contact-info__wrapper {
+        overflow: hidden;
+        border-radius: 0.625rem 0.625rem 0 0;
+      }
+
+      @media (min-width: 1024px) {
+        .contact-info__wrapper {
+          border-radius: 0 0.625rem 0.625rem 0;
+          padding: 5rem !important;
+        }
+      }
+      .contact-info__list span.position-absolute {
+        left: 0;
+      }
+      .z-index-101 {
+        z-index: 101;
+      }
+      .list-style--none {
+        list-style: none;
+      }
+      .contact__wrapper {
+        background-color: #fff;
+        border-radius: 0 0 0.625rem 0.625rem;
+      }
+
+      @media (min-width: 1024px) {
+        .contact__wrapper {
+          border-radius: 0.625rem 0 0.625rem 0.625rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .contact-form__wrapper {
+          padding: 5rem !important;
+        }
+      }
+      .shadow-lg,
+      .shadow-lg--on-hover:hover {
+        box-shadow: 0 1rem 3rem rgba(132, 138, 163, 0.1) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/mlogo.png" alt="logo detail" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-main"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="font-family: poppins"
+                >HOME</a
+              >
+            </li>
+            <!-- DROP DOWN 1 -->
+            <div class="collapse d-block" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >ABOUT</a
+                  >
+                  <ul
+                    class="dropdown-menu drop-item"
+                    aria-labelledby="navbarDropdownMenuLink2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="about.html">ABOUT US</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="products.html"
+                        >PRODUCT RANGE</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="customization.html"
+                        >CUSTOMIZATION</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services.html">SERVICE</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Drop Down 2 -->
+            <div class="collapse d-block" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >WINDOWS</a
+                  >
+                  <ul
+                    class="dropdown-menu drop-item"
+                    aria-labelledby="navbarDropdownMenuLink2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="windows.html"
+                        >ALL WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="SlidingWindow.html"
+                        >SLIDING WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="casementwindow.html"
+                        >CASEMENT WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="archwindow.html"
+                        >ARCH WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="combinationwindow.html"
+                        >COMBINATION WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="tiltandturn.html"
+                        >TILT & TURN WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="villawindows.html"
+                        >VILLA WINDOWS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Drop Down 3 -->
+            <div class="collapse d-block" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="Doors.html"
+                    id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >DOORS</a
+                  >
+                  <ul
+                    class="dropdown-menu drop-item"
+                    aria-labelledby="navbarDropdownMenuLink2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="Doors.html">ALL DOORS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="slidingdoor.html"
+                        >SLIDING DOORS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="casementdoor.html"
+                        >CASEMENT DOORS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="slideandfolddoor.html"
+                        >SLIDE & FOLD DOORS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                style="font-family: poppins"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="contact__wrapper shadow-lg mt-n9">
+        <div class="row no-gutters">
+          <div
+            class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2"
+          >
+            <h3 class="color--white mb-5">Get in Touch</h3>
+
+            <ul
+              class="contact-info__list list-style--none position-relative z-index-101"
+            >
+              <li class="mb-4 pl-4">
+                <span class="position-absolute"
+                  ><i class="fas fa-envelope"></i
+                ></span>
+                Infokavachextrusion@gmail.com
+              </li>
+              <li class="mb-4 pl-4">
+                <span class="position-absolute"
+                  ><i class="fas fa-phone"></i
+                ></span>
+                +91-8050096074
+              </li>
+              <li class="mb-4 pl-4">
+                <span class="position-absolute"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></span>
+                Plot no 153 P, Rayapur Industrial area, Rayapur, Hubli,
+                Karnataka
+
+                <div class="mt-3">
+                  <a
+                    href="https://www.google.com/maps"
+                    target="_blank"
+                    class="text-link link--right-icon text-white"
+                    >Get directions <i class="link__icon fa fa-directions"></i
+                  ></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+            <form
+              action="process_form.php"
+              method="post"
+              class="contact-form form-validate"
+              novalidate="novalidate"
+            >
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="firstName"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      name="firstName"
+                      placeholder="Kavach"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      name="lastName"
+                      placeholder="Extrusion"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="email">Email</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder=" Infokavachextrusion@gmail.com "
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-6 mb-3">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      placeholder="+91-1234..."
+                    />
+                  </div>
+                </div>
+
+                <div class="col-sm-12 mb-3">
+                  <div class="form-group">
+                    <label class="required-field" for="message"
+                      >How can we help?</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Hi there, I would like to....."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 mb-3">
+                  <button type="submit" name="submit" class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End Contact Form Wrapper -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

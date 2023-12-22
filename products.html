@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      .card-img-top {
+        padding: 10px;
+        height: 300px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/mlogo.png" alt="logo detail" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-main"
+        >
+          <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="font-family: poppins"
+                >HOME</a
+              >
+            </li>
+            <!-- DROP DOWN 1 -->
+            <div class="collapse d-block" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >ABOUT</a
+                  >
+                  <ul
+                    class="dropdown-menu drop-item"
+                    aria-labelledby="navbarDropdownMenuLink2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="about.html">ABOUT US</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="products.html"
+                        >PRODUCT RANGE</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="customization.html"
+                        >CUSTOMIZATION</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="services.html">SERVICE</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Drop Down 2 -->
+            <div class="collapse d-block" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >WINDOWS</a
+                  >
+                  <ul
+                    class="dropdown-menu drop-item"
+                    aria-labelledby="navbarDropdownMenuLink2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="windows.html"
+                        >ALL WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="SlidingWindow.html"
+                        >SLIDING WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="casementwindow.html"
+                        >CASEMENT WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="archwindow.html"
+                        >ARCH WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="combinationwindow.html"
+                        >COMBINATION WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="tiltandturn.html"
+                        >TILT & TURN WINDOWS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="villawindows.html"
+                        >VILLA WINDOWS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Drop Down 3 -->
+            <div class="collapse d-block" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item"></li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="Doors.html"
+                    id="navbarDropdownMenuLink2"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >DOORS</a
+                  >
+                  <ul
+                    class="dropdown-menu drop-item"
+                    aria-labelledby="navbarDropdownMenuLink2"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="Doors.html">ALL DOORS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="slidingdoor.html"
+                        >SLIDING DOORS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="casementdoor.html"
+                        >CASEMENT DOORS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="slideandfolddoor.html"
+                        >SLIDE & FOLD DOORS</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                style="font-family: poppins"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">PRODUCT RANGE</h1>
+            <h2>CASEMENT SERIES</h2>
+            <p class="lead text-body-secondary">
+              I-60 Series is designed for Casement Doors, Casement Windows and
+              Casement Windows with Grill and Mesh with options of single and
+              double glazing ranging from 5 mm to 32 mm. The system comes with
+              co-extruded glassing beads for better finishing and easy
+              installation.
+            </p>
+            <p>
+              <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-0 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/casement door.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">Casement Door</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/casement window.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Double Rail with Screen Sash
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/Casement Window with Grill and Mesh.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">3-Track 3-Panel Door</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/lamr.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">Laminations Available in</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second section -->
+      <section class="text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h2>SLIDING SERIES</h2>
+            <p class="lead text-body-secondary">
+              -50, I-60, I-64 & I-75 Series are designed for Sliding Doors and
+              Sliding Windows. The wide range provides flexibility to
+              fabricators and end users. They are available in 2-Track, 2-Track
+              with fly-screen, 3-Track etc., to suit specific customer
+              requirements with options of single glazing and double glazing
+              ranging from 5 mm to 24 mm.
+            </p>
+            <p>
+              <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/2-Track 2-Panel Window.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">2-Track 2-Panel Window</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/Double Rail with Screen Sash.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">
+                    Double Rail with Screen Sash
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/3-Track 3-Panel Door.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">3-Track 3-Panel Door</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="products/lamr.png"
+                  class="bd-placeholder-img card-img-top"
+                  alt="Your Image"
+                />
+                <div class="card-body">
+                  <p class="card-text text-center">Laminations Available in</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="articles-header" id="combination">
+            <h3>COMBINATION SYSTEMS</h3>
+            <p>
+              A wide range of combinations (Sliding + Casement) is possible with
+              custom-built aluminium couplers to meet different architectural
+              needs.
+            </p>
+            <ul>
+              <li>Casement + Casement Fixed</li>
+              <li>Casement + Top Hung</li>
+              <li>Sliding + Casement Fixed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="articles" id="speciall">
+            <h3>SPECIALITIES</h3>
+            <h4>ARCH WINDOWS</h4>
+            <p>
+              VEKA I-60 Casement profiles have the flexibility to be bent into
+              arch shapes which gives a traditional look to the building. Our
+              in-house arch bending facility is capable of fabricating arch
+              windows with options of single and double glazing.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="articles-img">
+            <img src="products/arched.jpg" class="" alt="arched window" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/Tilt-and-Turn-Window.png"
+            class="float-left"
+            alt="arched window"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>TILT & TURN WINDOWS</h4>
+          <p>
+            VEKA Tilt & Turn Windows provide an avant-garde look to your house.
+            These are inward opening windows available in I-60 Casement Series
+            and ensure good ventilation to your home. The windows provide a
+            higher degree of flexibility which is suited for any building type.
+          </p>
+          <ul>
+            <li>8 mm sash overlap for superior performance</li>
+            <li>Imported hardware of high corrosion resistance properties</li>
+            <li>Multi-point locking with hardware screw fixed to steel</li>
+            <li>
+              Glazing options - 6 mm single glazing / 20 & 24 mm double glazing
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>SLIDE & FOLD DOORS</h4>
+          <p>
+            VEKA Slide & Fold Doors offer a premium look with the maximum
+            opening space which can be integrated into your balconies or terrace
+            opening. The window system is available in I-60 Casement Series with
+            German hardware
+          </p>
+          <ul>
+            <li>8 mm sash overlap for superior performance</li>
+            <li>Multi-point locking with hardware screw fixed to steel</li>
+            <li>Heavy duty roller for smooth operation</li>
+            <li>
+              Glazing options - 6 mm single glazing / 20 & 24 mm double glazing
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/slide win.jpg"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/TILT & SLIDE DOORS.webp"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>TILT & SLIDE DOORS</h4>
+          <p>
+            VEKA Tilt & Slide Doors offer a grand view while giving the option
+            to tilt and slide the doors behind the fixed panel for maximum
+            ventilation. The door system is in I-60 Casement Series with
+            European hardware which makes it reliable, soundproof and secure.
+          </p>
+          <ul>
+            <li>8 mm sash overlap for superior performance</li>
+            <li>Multi-point locking with hardware screw fixed to steel</li>
+            <li>eavy duty roller for smooth operation</li>
+            <li>
+              Glazing options - 6 mm single glazing / 20 & 24 mm double glazing
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>TWIN SASH GRILL & MESH WINDOWS</h4>
+          <p>
+            VEKA Twin Sash Grill & Mesh Windows are aesthetically superior. The
+            window system is available in I-60 Casement series with multi-point
+            locking hardware that provides safety and security besides keeping
+            insects out. It also comes with an option of grill only, without
+            mosquito screen.
+          </p>
+          <ul>
+            <li>8 mm Sash overlap for Superior performance</li>
+            <li>Outward opening glass panel and inward opening mesh panel</li>
+            <li>
+              Glazing options - 6 mm single glazing / 20 & 24 mm double glazing
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/mash and grill.jpg"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+    </div>
+    <h3 class="spc-app text-center">SPECIAL APPLICATIONS</h3>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles-img" id="premiumm">
+          <img
+            src="products/paralle.jpg"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>Parallel Windows</h4>
+          <p>
+            The ideal choice for maximum ventilation. VEKA Parallel Windows are
+            safe and secure for even children’s rooms, as they open only 135 mm
+            (5 inches). And to top that, they’re easy to operate.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>Vertical Slider</h4>
+          <p>
+            Their American style of operation makes these windows ideal for
+            residential developments. They do not take up inside or outside
+            space, as the shutters are sliding and can be held at any position,
+            from fully open to closed and everything in between.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/vertical.jpg"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/bay win.jpg"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>Bay Windows</h4>
+          <p>
+            Bay Windows are combinations of two or more windows connected at an
+            angle (90 to 180 degrees) or in a curved shape. It provides a
+            panoramic outside view and adds aesthetic value to a home.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="articles">
+          <h4>Motorised/Lever Operated Windows</h4>
+          <p>
+            Ideal for windows installed at a height that is not accessible to
+            operate. The lever handle can be combined to operate up to three
+            shutters at the same time. A motorised option is also available
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="articles-img">
+          <img
+            src="products/motorized-window-openers-news01.jpg"
+            class="float-right"
+            alt="arched window"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/Casement-Window-Espagnolette.png"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Espagnolettes & Strikers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/3D-Door-Flag-Hinge.webp"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Hinges & Friction Hinges</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/accesories5.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Complete Sets</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/handle.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Handles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/roller.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Rollers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/accesories6.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Screws & Fasteners</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="products/plastic.jpg"
+              class="bd-placeholder-img card-img-top"
+              alt="Your Image"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Plastic Parts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="accessories">
+            <h3>ACCESSORIES</h3>
+            <hr />
+            <h4>ESPAGNOLETTES</h4>
+            <p>
+              Made out of carbon steel with high corrosion resistant coating,
+              VEKA espagnolettes are conformed by EN 1670, Grade 5 (480 hours
+              for red rust) and are available in several sizes:
+            </p>
+            <ul>
+              <li>
+                Casement window in 600, 800, 1000 & 1200, 1600 mm & 1800 mm
+              </li>
+              <li>Sliding door in 1200, 1600, 1800 & 2000 mm</li>
+            </ul>
+            <h4>HANDLES</h4>
+            <p>
+              Zinc / Aluminium alloy handles in White (RAL9016) / Dark Brown
+              (RAL 8022) finish:
+            </p>
+            <ul>
+              <li>Cockspur handle (left & right) for single point locking</li>
+              <li>Casement window handle (L-shaped) for multi-point locking</li>
+              <li>
+                Cranked casement window handle (low-neck) for windows with grill
+                and mesh
+              </li>
+              <li>Casement door handle for integrated lock (espag)</li>
+              <li>Special touch locks with strikers</li>
+              <li>
+                Patio handle (Pop-up Handle), L-shaped, low-neck and D type
+                handles
+              </li>
+            </ul>
+            <h4>HINGES</h4>
+            <ul>
+              <li>
+                SS430 grade friction hinges in 8”, 10”, 12”, 16”, 20” & 24”
+                (SS304 also available on request)
+              </li>
+              <li>3D hinges, butt hinges & concealed hinges</li>
+            </ul>
+            <h4>ROLLERS</h4>
+            <ul>
+              <li>Single roller (.at) 16 mm width x 14 mm height</li>
+              <li>
+                Single roller (grooved) 12 mm width x 17 / 21 mm height, nylon
+                body with ball bearing.
+              </li>
+              <li>
+                Adjustable double roller (grooved) 12 mm width x 17.5/23 mm
+                height. SS304 with ball bearing
+              </li>
+              <li>Roller for Y-screen sashes</li>
+            </ul>
+            <h4>WOOL PILES</h4>
+            <p>
+              Silicone grade waterproof and UV resistant, available in 6 x 6 mm,
+              5 x 8 mm and 6 x 10 mm
+            </p>
+            <h4>SCREWS & FASTENERS</h4>
+            <p>
+              Carbon steel screws (self-drilling & self-tapping) with high
+              corrosion resistant coating in various sizes for window/door
+              fabrication, SS410 screws for friction hinges and frame anchor
+              expansion bolt 8 x 100 mm for installation
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #1c2331"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: #14406c"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=61554381347692"
+            target="_blank"
+            class="text-white me-4"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/kavach_extrusion/"
+            target="_blank"
+            class="text-white me-4"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kavach-extrusion/"
+            target="_blank"
+            class="text-white me-4"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="footer-heading" id="footer">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">Kavach Extrusion</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                Your Gateway to Quality Living: Elevate Your Space with Kawach.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Products</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Casement Series</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Sliding Series</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Combination Systems</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Specialities</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               <h6 class="text-uppercase fw-bold">Useful links</h6>
+               <hr
+                 class="mb-4 mt-0 d-inline-block mx-auto"
+                 style="width: 60px; background-color: #7c4dff; height: 2px"
+               />
+               <p>
+                 <a href="#!" class="text-white">Your Account</a>
+               </p>
+               <p>
+                 <a href="#!" class="text-white">Become an Affiliate</a>
+               </p>
+               <p>
+                 <a href="#!" class="text-white">Shipping Rates</a>
+               </p>
+               <p>
+                 <a href="#!" class="text-white">Help</a>
+               </p>
+             </div> -->
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <i class="fas fa-home mr-3"></i> Plot no 153 P, Rayapur
+                Industrial area, Rayapur, Hubli, Karnataka
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i
+                >Infokavachextrusion@gmail.com
+              </p>
+              <p><i class="fas fa-phone mr-3"></i> +91-8050096074</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="">info@kavachextrusion.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- End of .container -->
+  </body>
+</html>

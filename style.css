@@ -1,0 +1,877 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fbfcff;
+  font-family: "Poppins", sans-serif;
+  --color1: #fff;
+  --color2: #181818;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #14406c;
+  border-radius: 30%;
+}
+
+#btn-back-to-top i {
+  color: #fff;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+}
+
+/* Default styles for larger screens */
+.carousel-caption.top-0.mt-5 {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+/* Custom media query for screens below 765px */
+@media (max-width: 765px) {
+  .carousel-caption.top-0.mt-5 {
+    font-size: 1.2rem;
+    display: block !important;
+  }
+}
+
+.container {
+  max-width: 1024px;
+  padding: 3rem 0;
+  /* margin-top: 80px;  */
+}
+
+#hero-head {
+  padding: 10px;
+  text-align: center;
+}
+
+#hero-head h3 {
+  margin-bottom: 30px;
+  color: #14406c;
+}
+
+#hero-head p {
+  font-size: 15px;
+}
+
+#circled-cont h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#circled-cont p {
+  font-size: 15px;
+}
+
+#gall-cont h2 {
+  text-transform: uppercase;
+  color: #14406c;
+  font-size: 25px;
+}
+
+#gall-cont p {
+  font-size: 18px;
+}
+
+.window_card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #14406c;
+  height: 495px;
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden; /* Added overflow property */
+  overflow: hidden; /* Added overflow property */
+  transition: transform 0.3s ease; /* Added transition property */
+}
+.window_card:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* .window_card img {
+  margin: 0;
+} */
+
+.window_card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 3.5rem 0 1.5rem;
+  text-transform: uppercase;
+}
+.description {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 2px solid;
+  margin: 1.5rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow_bg {
+  border-color: #acb9c9;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 6px;
+  color: #4070f4;
+}
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+#info-diz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add these styles to center and cover background images */
+.info_card {
+  width: 600px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info_card::before {
+  content: ""; /* Add content to create the pseudo-element */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity as needed */
+  filter: brightness(70%); /* Apply brightness filter to the overlay only */
+  border-radius: 20px;
+}
+
+/* Additional styles for card-content */
+.card-content {
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.card-content h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 15px; /* Adjust paragraph font size */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.card-content .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff; /* Set button background color */
+  color: #14406c; /* Set button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-content .button:hover {
+  background-color: #acb9c9; /* Set button background color on hover */
+}
+
+.personalized-content {
+  text-align: center;
+  margin-top: 0%;
+}
+
+.personalized-content h2 {
+  font-size: 25px;
+  color: #14406c;
+}
+
+.personalized-content p {
+  font-size: 15px;
+}
+
+.circled-article svg {
+  border-radius: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.circled-article h4 {
+  color: #14406c;
+  font-size: 20px;
+}
+
+.circled-article p {
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.whyus {
+  text-align: center;
+}
+.whyus h2 {
+  color: #14406c;
+  margin-bottom: 10px;
+}
+
+.whyus p {
+  margin-bottom: 0%;
+}
+
+.whyus h6 {
+  margin-bottom: 50px;
+}
+
+#minimal-statistics h4 {
+  color: black;
+}
+
+.ms-card {
+  background-color: #14406c;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.ms-card h3 {
+  color: #fff;
+}
+
+.why-card {
+  text-align: center;
+  margin-top: 50px;
+  height: 450px;
+}
+
+#whycrd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-card img {
+  height: 300px;
+  width: 250px;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.why-card h6 {
+  color: #14406c;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.why-card p {
+  font-size: 13px;
+}
+
+.card-body {
+  padding: 10px;
+  background-color: #eef0e5;
+}
+
+.card-body p {
+  padding: 10px;
+  color: black;
+}
+
+.card-body h6 {
+  font-size: 20px;
+}
+
+.why-cb {
+  height: 150px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cta {
+  border-radius: 20px;
+  padding: 20px;
+  height: 200px;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    #2596be,
+    #1d7fab,
+    #186a96,
+    #165482,
+    #14406c
+  );
+}
+
+.cta h3 {
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 0%;
+  margin-top: 20px;
+}
+
+.cta #cta-btn {
+  margin-top: 30px;
+  height: 50px;
+  width: 150px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-heading a {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .window_card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* product Page */
+
+.pro-container {
+  padding: 50px;
+  height: 220px;
+  width: 100%;
+  color: #14406c;
+}
+
+.pro-containerb {
+  padding: 50px;
+  margin-bottom: 0%;
+  height: 220px;
+  width: 100%;
+  color: #14406c;
+}
+.pro-containerb h4 {
+  text-align: start;
+  text-decoration: underline;
+}
+
+.pro-containerb p {
+  color: black;
+}
+
+.pro-container h4 {
+  text-align: start;
+  text-decoration: underline;
+}
+
+.pro-container p {
+  color: black;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: start;
+  text-wrap: balance;
+}
+
+.articles-header,
+.articles {
+  padding: 50px;
+}
+
+.articles-header h3 {
+  color: #14406c;
+  font-weight: 550;
+}
+
+.articles h3 {
+  color: #14406c;
+}
+
+.articles h4 {
+  margin-top: 50px;
+  color: #14406c;
+}
+
+.articles img {
+  height: 100px;
+}
+
+.articles-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articles-img img {
+  width: 300px;
+  height: 400px;
+}
+
+.accessories h3 {
+  color: #14406c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.accessories h4 {
+  color: #14406c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.accessories hr {
+  border-top: 10px solid #14406c;
+}
+
+.icon-img {
+  height: 70px;
+  color: #fff;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+#msc-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ms-cardb {
+  background-color: #14406c;
+  height: 95%; /* Set height to 100% */
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.ms-head {
+  text-align: center; /* Center the text */
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px;
+}
+
+#lavaris {
+  display: none; /* Hide lavaris column by default */
+}
+
+@media (max-width: 1200px) {
+  .ms-cardb {
+    height: 95%; /* Set height to 100% */
+    width: 85%;
+  }
+
+  #msc-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #lavaris {
+    display: none; /* Hide lavaris column below 1200px */
+  }
+  .hide-below-1200 {
+    display: none;
+  }
+}
+
+#cf-box {
+  display: flex;
+  justify-content: center;
+}
+
+.cf-img {
+  width: 250px;
+}
+
+.cf-text {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* clinet section scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust based on the width of one slide */
+  }
+}
+
+.slider-container {
+  max-width: 1000px; /* Adjust the max-width based on your design */
+  margin: auto;
+}
+
+.slider {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider .slider-track {
+  animation: scroll 20s linear infinite; /* Adjust the animation duration based on your preference */
+  display: flex;
+}
+
+.slider .slide {
+  flex: 0 0 auto; /* Ensure the images don't shrink */
+  height: 100px;
+  width: 250px; /* Set a fixed width for each slide */
+  max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+}
+
+.cont-box {
+  padding: 20px;
+}
+.cont-box h3 {
+  color: #14406c;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cont-box h4 {
+  color: #14406c;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  /* z-index: 2; */
+  /* background-color: #ecf2ff; */
+  background-color: #14406c;
+
+  transition: top 0.3s;
+  color: var(--main-text-color);
+}
+
+.navbar-scrolled {
+  top: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 10px;
+  color: #205e61 !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  /* color: #ffea20 !important; */
+  color: #b6bbc4 !important;
+}
+
+.navbar-toggler {
+  border-color: #fff !important;
+}
+
+.navbar-toggler-icon {
+  padding: 5px 0;
+  color: #000;
+}
+
+#navbarNavDropdown .drop-item {
+  background-color: #b6bbc4;
+  border-radius: 10px;
+}
+
+#navbarNavDropdown .drop-item a {
+  color: #fff;
+  text-align: center;
+}
+
+#navbarNavDropdown .drop-item a:hover {
+  color: #14406c !important;
+}
+
+.nav-item a {
+  color: #fff !important ;
+}
+
+/* ABOUT US CSS */
+
+/* .ab-head {
+  padding: 50px;
+  max-width: 1200px;
+}
+
+#ab-cont {
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+} */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ab-head {
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #343a40;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Icon Colors */
+.icon-info {
+  color: #17a2b8;
+}
+
+.icon-secondary {
+  color: #6c757d;
+}
+
+.icon-danger {
+  color: #dc3545;
+}
+
+.icon-medal {
+  color: #ffc107;
+}
+
+@media only screen and (max-width: 599px) {
+  #ab-cont {
+    padding: 50px;
+    text-align: justify;
+  }
+
+  #usqq {
+    text-align: left;
+  }
+}
+
+/* ... (Previous styles remain unchanged) */
+
+/* Hero section styling */
+.win-hero {
+  height: 350px;
+  position: relative;
+  background-image: url("img/douglas-sheppard-9rYfG8sWRVo-unsplash.jpg"); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0; /* Adjust the padding as needed */
+  overflow: hidden; /* Ensure the brightness filter doesn't affect child elements */
+}
+
+.win-hero::before {
+  content: ""; /* Create a pseudo-element to apply the filter */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Inherit background properties from parent */
+  filter: brightness(0.7); /* Adjust brightness value as needed (0 to 1) */
+}
+
+.win-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.win-content p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.win-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Text overlay to improve visibility */
+.win-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity as needed */
+}
+
+/* ... (Previous styles remain unchanged) */
+
+/* Expandable Content Section styling */
+.expandable-content {
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  overflow: hidden; /* Ensure smooth transition */
+  transition: max-height 0.3s ease; /* Add a smooth transition effect */
+  max-height: 1000px; /* Set a maximum height that accommodates the initial content */
+}
+
+.content h3 {
+  color: #14406c;
+}
+
+.content p {
+  font-size: 15px;
+}
+
+.hidden-content {
+  max-height: 0; /* Initially hide the hidden content */
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Add a smooth transition effect */
+}
+
+.read-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#slide-box {
+  background-color: #f3f8fb;
+}
+
+.slide-cont h4 {
+  color: #14406c;
+  font-size: 1.5rem;
+}
